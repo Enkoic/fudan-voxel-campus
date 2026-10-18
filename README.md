@@ -3,6 +3,9 @@
 以公开地理数据、校园资料和公开照片为参考，构建 **邯郸、江湾、枫林** 三校区三维示意模型。
 提供两套可交互网页：**精细体块版**与 **3D 体素版**，并附带可导入 Blender / SketchUp / 其他三维软件的 GLB 模型。
 
+**在线访问**：<https://enkoic.github.io/fudan-voxel-campus/>
+**体素版直达**：<https://enkoic.github.io/fudan-voxel-campus/voxel.html>
+
 ![三区总览](screenshots/overview.jpg)
 
 ![光华楼与校园细节](screenshots/detail.jpg)
@@ -18,7 +21,12 @@ cd 复旦大学
 python3 -m http.server 8765
 ```
 
-浏览器打开：
+线上直接打开：
+
+- **精细体块版**：<https://enkoic.github.io/fudan-voxel-campus/>
+- **3D 体素版**：<https://enkoic.github.io/fudan-voxel-campus/voxel.html>
+
+本地预览：
 
 - **精细体块版**：<http://127.0.0.1:8765/>
 - **3D 体素版**：<http://127.0.0.1:8765/voxel.html>
@@ -41,7 +49,7 @@ python3 -m http.server 8765
 
 ## 3D 体素版
 
-**<http://127.0.0.1:8765/voxel.html>**，也可从精细版右上角的 ▦「体素」按钮进入。
+**<https://enkoic.github.io/fudan-voxel-campus/voxel.html>**，也可从精细版右上角的 ▦「体素」按钮进入。
 
 体素版不是把照片贴到方块上，而是把校园重新栅格化：
 
@@ -148,6 +156,8 @@ http://127.0.0.1:8765/glb_view.html?m=./models/fudan-handan.glb
 - 预览：`http://127.0.0.1:8765/glb_view.html?m=./models/fudan-voxel-three-campuses.glb`
 
 ## 在线部署
+
+**当前线上地址**：<https://enkoic.github.io/fudan-voxel-campus/>（GitHub Pages）
 
 项目是**纯静态站点**，根目录即可直接部署，不需要构建步骤。`index.html`、`voxel.html`、`vendor/`、`data/campuses.json`、`references/` 和 `models/` 之间全部使用相对路径。
 
