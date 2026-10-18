@@ -1,0 +1,7 @@
+node_modules/
+.venv/
+.pnpm-store/
+.DS_Store
+data/raw/*.png
+data/raw/*.jpg
+*.log

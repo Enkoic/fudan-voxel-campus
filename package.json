@@ -1,0 +1,16 @@
+{
+  "name": "fudan-three-campuses-3d",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80",
+    "three": "0.180.0"
+  },
+  "scripts": {
+    "serve": "python3 -m http.server 8765",
+    "build:data": ".venv/bin/python scripts/build_data.py",
+    "build:glb": "node scripts/export_glb.mjs",
+    "build:voxel": "node scripts/export_voxel_glb.mjs"
+  }
+}
